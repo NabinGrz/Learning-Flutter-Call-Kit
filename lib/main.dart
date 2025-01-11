@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_callkit_incoming/entities/call_kit_params.dart';
 import 'package:flutter_callkit_incoming/entities/entities.dart';
 import 'package:flutter_callkit_incoming/flutter_callkit_incoming.dart';
+import 'package:learning_call_kit/pip_view_screen.dart';
 import 'package:uuid/uuid.dart';
 import 'package:uuid/v4.dart';
 
@@ -71,10 +72,18 @@ class _MyHomePageState extends State<MyHomePage> {
               label: const Text("Video Call"),
             ),
             ElevatedButton.icon(
-              onPressed: () async {
-                // await missedCallIOS();
-              },
+              onPressed: () async {},
               label: const Text("Missed Call IOS"),
+            ),
+            ElevatedButton.icon(
+              onPressed: () {
+                // PIPView.of(context)?.presentBelow(const PipViewScreen());
+                Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                        builder: (context) => const PipViewScreen()));
+              },
+              label: const Text("Navigate"),
             ),
           ],
         ),

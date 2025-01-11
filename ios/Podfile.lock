@@ -1,5 +1,7 @@
 PODS:
   - CryptoSwift (1.8.4)
+  - fl_pip (0.0.1):
+    - Flutter
   - Flutter (1.0.0)
   - flutter_callkit_incoming (0.0.1):
     - CryptoSwift
@@ -10,6 +12,7 @@ PODS:
   - Toast (4.1.1)
 
 DEPENDENCIES:
+  - fl_pip (from `.symlinks/plugins/fl_pip/ios`)
   - Flutter (from `Flutter`)
   - flutter_callkit_incoming (from `.symlinks/plugins/flutter_callkit_incoming/ios`)
   - fluttertoast (from `.symlinks/plugins/fluttertoast/ios`)
@@ -20,6 +23,8 @@ SPEC REPOS:
     - Toast
 
 EXTERNAL SOURCES:
+  fl_pip:
+    :path: ".symlinks/plugins/fl_pip/ios"
   Flutter:
     :path: Flutter
   flutter_callkit_incoming:
@@ -29,6 +34,7 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   CryptoSwift: e64e11850ede528a02a0f3e768cec8e9d92ecb90
+  fl_pip: a193f28e7c4ffcabcb0df25fb40f8e31ec929efc
   Flutter: e0871f40cf51350855a761d2e70bf5af5b9b5de7
   flutter_callkit_incoming: 417dd1b46541cdd5d855ad795ccbe97d1c18155e
   fluttertoast: e9a18c7be5413da53898f660530c56f35edfba9c
